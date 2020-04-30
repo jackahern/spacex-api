@@ -12,7 +12,7 @@ class App extends Component {
         <Navigation/>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/Launches" component={Launches}/>
+          <Route path="/Launches/:type?" component={Launches}/>
         </Switch>
       </div>
     )
