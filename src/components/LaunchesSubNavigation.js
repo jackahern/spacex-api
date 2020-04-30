@@ -12,9 +12,6 @@ class LaunchesSubNavigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav" style={{ justifyContent: 'center'}}>
           <Nav>
             <NavItem>
-              <NavLink tag={Link} to="/Launches/all">All Launches</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink tag={Link} to="/Launches/latest">Latest Launch</NavLink>
             </NavItem>
             <NavItem>

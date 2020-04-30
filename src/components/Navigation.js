@@ -13,7 +13,7 @@ class Navigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavItem>
-              <NavLink tag={Link} to="/Launches">Launches</NavLink>
+              <NavLink tag={Link} to="/Launches/latest">Launches</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/UpcomingMovies">pending..</NavLink>
