@@ -31,12 +31,12 @@ class LaunchDetails extends Component {
             <ListGroup variant="flush">
               <ListGroup.Item style={{ fontWeight: '700', fontSize: '20px' }}>Rocket Info</ListGroup.Item>
               <ListGroup.Item>Rocket ID: {rocket.rocket_id}</ListGroup.Item>
-              <ListGroup.Item>Rocket: {rocket.rocket_name}</ListGroup.Item>
+              <ListGroup.Item>Rocket Name: {rocket.rocket_name}</ListGroup.Item>
               <ListGroup.Item>Rocket Type: {rocket.rocket_type}</ListGroup.Item>
             </ListGroup>
             <ListGroup variant="flush">
               <ListGroup.Item style={{ fontWeight: '700', fontSize: '20px' }}>Details</ListGroup.Item>
-              <ListGroup.Item>{launch.details}</ListGroup.Item>
+              <ListGroup.Item className="details">{launch.details}</ListGroup.Item>
               <ListGroup.Item><a href={`${links.article_link}`} target="_blank">View Article</a></ListGroup.Item>
               <ListGroup.Item>Status: <Button variant={launch.launch_success ? 'success' : 'danger'}>{launch.launch_success ? 'Success' : 'Failed'}</Button></ListGroup.Item>
             </ListGroup>

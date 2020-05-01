@@ -6,6 +6,9 @@
 .list-group-item, .card {
     background-color: unset;
 }
+.details {
+    max-width: 580px;
+}
 
 .mission-pic {
     max-width: 320px;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Carousel, Button } from 'react-bootstrap';
 import banner from "../spacex-logo.png";
 import launch from '../launch.jpg';
@@ -17,17 +18,19 @@ class Home extends Component {
           <Container fluid>
             <Row>
                 <Col>
-                  <Card>
-                    {/*<Link to={`/Launches/${movie._id}`}>*/}
-                      <Card.Img variant="top" src={launch} alt="Launch image" />
-                    {/*</Link>*/}
-                    <Card.Body>
-                      <Card.Title>Launches</Card.Title>
-                      <Card.Text>
-                        See upcoming and past SpaceX launches
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
+                  <Link to="/Launches/upcoming">
+                    <Card>
+                      {/*<Link to={`/Launches/${movie._id}`}>*/}
+                        <Card.Img variant="top" src={launch} alt="Launch image" />
+                      {/*</Link>*/}
+                      <Card.Body>
+                        <Card.Title>Launches</Card.Title>
+                        <Card.Text>
+                          See upcoming and past SpaceX launches
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Link>
                 </Col>
               <Col>
                 <Card>
