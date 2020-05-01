@@ -18,3 +18,14 @@ export function getLaunches(type) {
     payload: output
   }
 }
+
+export function getLaunch(flight_number) {
+
+  const output = axios.get(`${baseUrl}/launches/${flight_number}`)
+    .then((res) => res.data);
+
+  return {
+    type: 'GET_LAUNCH',
+    payload: output
+  }
+}

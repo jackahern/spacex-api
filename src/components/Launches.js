@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {getLaunches} from '../actions';
 import {connect} from 'react-redux';
@@ -72,6 +73,7 @@ class Launches extends Component {
                             <ListGroup.Item>Launch Date: <Timestamp date={launch.launch_date_unix} /></ListGroup.Item>
                             <ListGroup.Item>Launch Site: {launch.launch_site.site_name_long}</ListGroup.Item>
                             <ListGroup.Item>Rocket: {launch.rocket.rocket_name}</ListGroup.Item>
+                            <ListGroup.Item><Button variant="info">More details</Button></ListGroup.Item>
                           </ListGroup>
                         </div>
                       </Card>
@@ -98,6 +100,8 @@ class Launches extends Component {
                             <ListGroup.Item>Launch Date: <Timestamp date={launch.launch_date_unix} /></ListGroup.Item>
                             <ListGroup.Item>Launch Site: {launch.launch_site.site_name_long}</ListGroup.Item>
                             <ListGroup.Item>Rocket: {launch.rocket.rocket_name}</ListGroup.Item>
+                            <ListGroup.Item>Status: <Button variant={launch.launch_success ? 'success' : 'danger'}>{launch.launch_success ? 'Success' : 'Failed'}</Button></ListGroup.Item>
+                            <ListGroup.Item><Link to={`/LaunchDetails/${launch.flight_number}`}><Button variant="info">More details</Button></Link></ListGroup.Item>
                           </ListGroup>
                         </div>
                       </Card>
