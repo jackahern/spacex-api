@@ -29,3 +29,14 @@ export function getLaunch(flight_number) {
     payload: output
   }
 }
+
+export function getRockets() {
+
+  const output = axios.get(`${baseUrl}/rockets`)
+    .then((res) => res.data);
+
+  return {
+    type: 'GET_ROCKETS',
+    payload: output
+  }
+}

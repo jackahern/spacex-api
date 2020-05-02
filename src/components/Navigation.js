@@ -16,7 +16,7 @@ class Navigation extends Component {
               <NavLink tag={Link} to="/Launches/latest">Launches</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/UpcomingMovies">pending..</NavLink>
+              <NavLink tag={Link} to="/Rockets">Rockets</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/Events">pending..</NavLink>
