@@ -16,7 +16,8 @@ class Rockets extends Component {
 
     console.log(rockets)
     return (
-      <div>
+      <div id="rockets">
+        <h1 style={{ marginBottom: '40px', marginTop: '40px', color: 'white', textAlign: 'center' }}>SpaceX Rockets</h1>
         {rockets.map((rocket) => (
           <Card>
             <Card.Body>
@@ -44,7 +45,7 @@ class Rockets extends Component {
                   </ListGroup>
                 </Tab>
                 <Tab eventKey="first-launch-results" title="First launch results">
-                  <ListGroup className="list-group-flush">
+                  <ListGroup className="list-group-flush list-group-rockets">
                     <ListGroupItem>First flight: {rocket.first_flight}</ListGroupItem>
                     <ListGroupItem>Engines: {rocket.first_stage.engines}</ListGroupItem>
                     <ListGroupItem>Burn time (seconds): {rocket.first_stage.burn_time_sec}</ListGroupItem>

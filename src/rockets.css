@@ -1,7 +1,6 @@
 .nav-tabs {
     padding: 20px;
 }
-
 .nav-link-active {
     background-color: #2e242c;
 }
@@ -10,13 +9,15 @@
     margin-right: 20px;
     color: white;
 }
-
 .nav-link:hover {
     color: whitesmoke;
     font-weight: 700;
     transition-duration: 0.5s;
 }
-
-.list-group-item {
+#rockets .list-group-item {
     color: deepskyblue;
+}
+#rockets .tab-content {
+    background-color: #2e242c;
+    border-radius: 6px;
 }
