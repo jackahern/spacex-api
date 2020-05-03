@@ -19,13 +19,9 @@ class Navigation extends Component {
               <NavLink tag={Link} to="/Rockets">Rockets</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/Events">pending..</NavLink>
+              <NavLink tag={Link} to="/Roadster">Roadster</NavLink>
             </NavItem>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Navbar>
     )
