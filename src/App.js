@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Launches from './components/Launches';
 import LaunchDetails from './components/LaunchDetails';
 import Rockets from './components/Rockets';
+import Roadster from "./components/Roadster";
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route path="/Launches/:type?" component={Launches}/>
           <Route path="/LaunchDetails/:flight_number" component={LaunchDetails}/>
           <Route path="/Rockets/" component={Rockets}/>
+          <Route path="/Roadster/" component={Roadster}/>
         </Switch>
       </div>
     )

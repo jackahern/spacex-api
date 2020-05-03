@@ -3,7 +3,6 @@ import {bindActionCreators} from "redux";
 import {getRockets} from "../actions";
 import {connect} from "react-redux";
 import { ListGroup, Card, Tabs, Tab, ListGroupItem } from "react-bootstrap";
-import Timestamp from 'react-timestamp';
 import '../launches.css';
 import '../rockets.css';
 

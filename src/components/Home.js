@@ -47,15 +47,16 @@ class Home extends Component {
               </Col>
               <Col>
                 <Card>
-                  {/*<Link to={`/Launches/${movie._id}`}>*/}
-                  <Card.Img variant="top" src={roadster} alt="Roadster image" />
-                  {/*</Link>*/}
-                  <Card.Body>
-                    <Card.Title>Roadster</Card.Title>
-                    <Card.Text>
-                      See the information still being collected by the spaceX roadster
-                    </Card.Text>
-                  </Card.Body>
+                  <Link to="/Roadster">
+                    <Card.Img variant="top" src={roadster} alt="Roadster image" />
+                    {/*</Link>*/}
+                    <Card.Body>
+                      <Card.Title>Roadster</Card.Title>
+                      <Card.Text>
+                        See the information still being collected by the spaceX roadster
+                      </Card.Text>
+                    </Card.Body>
+                  </Link>
                 </Card>
               </Col>
             </Row>

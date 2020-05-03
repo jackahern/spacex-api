@@ -40,3 +40,14 @@ export function getRockets() {
     payload: output
   }
 }
+
+export function getRoadster() {
+
+  const output = axios.get(`${baseUrl}/roadster`)
+    .then((res) => res.data);
+
+  return {
+    type: 'GET_ROADSTER',
+    payload: output
+  }
+}

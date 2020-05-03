@@ -1,0 +1,7 @@
+.list-group-item {
+    border: unset;
+}
+
+.card {
+    text-shadow: 3px 4px 5px #000;
+}
