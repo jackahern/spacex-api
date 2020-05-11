@@ -18,6 +18,7 @@ class App extends Component {
         <Navigation/>
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route path="/spacex-api/" component={Home}/>
           <Route path="/Launches/" component={Launches}/>
           <Route path="/Launches/Upcoming" component={LaunchesUpcoming}/>
           <Route path="/Launches/Past" component={LaunchesUpcoming}/>
