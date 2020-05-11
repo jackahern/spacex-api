@@ -38,7 +38,7 @@ class Roadster extends Component {
           <Card.Img src={RoadsterImg} alt="Roadster in space" />
           <Card.ImgOverlay style={{ textAlign: 'center', overflow: 'auto' }}>
             <Card.Title style={{ textAlign: 'center' }}>Where is {roadster.name}?</Card.Title>
-            <Card.Text>{roadster.details}.. <em>This page updates every 10 minutes in accordance with the refresh rate of the orbital data on SpaceX's API</em></Card.Text>
+            <Card.Text>{roadster.details}.. <em>This page updates every 10 minutes in alignment with the refresh rate of the orbital data on SpaceX's API</em></Card.Text>
             <Card.Text>Distance statistics in kilometres:</Card.Text>
             <ListGroup className="list-group-flush">
               <ListGroupItem>Distance from Earth:
