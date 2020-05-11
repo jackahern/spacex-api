@@ -2,19 +2,35 @@ import axios from 'axios';
 
 const baseUrl = 'https://api.spacexdata.com/v3';
 
-export function getLaunches(type) {
-  let output;
+export function getUpcomingLaunches() {
 
-  if (type === 'all') {
-    output = axios.get(`${baseUrl}/launches`)
-      .then((res) => res.data);
-  } else {
-    output = axios.get(`${baseUrl}/launches/${type}`)
-      .then((res) => res.data);
-  }
+  const output = axios.get(`${baseUrl}/launches/upcoming`)
+    .then((res) => res.data);
 
   return {
-    type: 'GET_LAUNCHES',
+    type: 'GET_UPCOMING_LAUNCHES',
+    payload: output
+  }
+}
+
+export function getPastLaunches() {
+
+  const output = axios.get(`${baseUrl}/launches/past`)
+    .then((res) => res.data);
+
+  return {
+    type: 'GET_PAST_LAUNCHES',
+    payload: output
+  }
+}
+
+export function getLatestLaunch() {
+
+  const output = axios.get(`${baseUrl}/launches/latest`)
+    .then((res) => res.data);
+
+  return {
+    type: 'GET_LATEST_LAUNCH',
     payload: output
   }
 }

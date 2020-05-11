@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {bindActionCreators} from "redux";
 import {getLaunch} from "../actions";
 import {connect} from "react-redux";
 import {Button, ListGroup} from "react-bootstrap";
 import Timestamp from "react-timestamp";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 import '../launches.css';
 
 class LaunchDetails extends Component {
@@ -19,6 +22,9 @@ class LaunchDetails extends Component {
     let site = this.props.launch.launch_site || {};
     return (
       <div className="launch-body">
+        <Link to="/Launches/">
+          <Button style={{marginLeft:'20px' }} variant="primary"><FontAwesomeIcon icon={faLongArrowAltLeft}/> Go Back</Button>
+        </Link>
         <div style={{ display: 'block', textAlign: 'center' }}>
           <h1 style={{ marginBottom: '50px' }}>More information for {launch.mission_name}</h1>
           <div style={{ display: 'flex', flex: '1', justifyContent: 'center' }}>

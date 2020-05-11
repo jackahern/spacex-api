@@ -13,13 +13,13 @@ class Navigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavItem>
-              <NavLink tag={Link} to="/Launches/latest">Launches</NavLink>
+              <NavLink tag={Link} to="/Launches" activeClassName="active-nav">Launches</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/Rockets">Rockets</NavLink>
+              <NavLink tag={Link} to="/Rockets" activeClassName="active-nav">Rockets</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/Roadster">Roadster</NavLink>
+              <NavLink tag={Link} to="/Roadster" activeClassName="active-nav">Roadster</NavLink>
             </NavItem>
           </Nav>
         </Navbar.Collapse>

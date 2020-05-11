@@ -18,11 +18,9 @@ class Home extends Component {
           <Container fluid>
             <Row>
                 <Col>
-                  <Link to="/Launches/upcoming">
-                    <Card>
-                      {/*<Link to={`/Launches/${movie._id}`}>*/}
+                  <Link to="/Launches">
+                    <Card className="grow">
                         <Card.Img variant="top" src={launch} alt="Launch image" />
-                      {/*</Link>*/}
                       <Card.Body>
                         <Card.Title>Launches</Card.Title>
                         <Card.Text>
@@ -34,7 +32,7 @@ class Home extends Component {
                 </Col>
               <Col>
                 <Link to="/Rockets">
-                  <Card>
+                  <Card className="grow">
                     <Card.Img variant="top" src={rocket} alt="Rocket image" />
                     <Card.Body>
                       <Card.Title>Rockets</Card.Title>
@@ -46,10 +44,9 @@ class Home extends Component {
                 </Link>
               </Col>
               <Col>
-                <Card>
+                <Card className="grow">
                   <Link to="/Roadster">
                     <Card.Img variant="top" src={roadster} alt="Roadster image" />
-                    {/*</Link>*/}
                     <Card.Body>
                       <Card.Title>Roadster</Card.Title>
                       <Card.Text>
