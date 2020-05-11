@@ -1,6 +1,6 @@
 {
   "name": "spacex-api",
-  "homepage": "https://jackahern.github.io/",
+  "homepage": "https://jackahern.github.io/spacex-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
