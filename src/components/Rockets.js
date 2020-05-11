@@ -3,6 +3,7 @@ import {bindActionCreators} from "redux";
 import {getRockets} from "../actions";
 import {connect} from "react-redux";
 import { ListGroup, Card, Tabs, Tab, ListGroupItem } from "react-bootstrap";
+import NumberFormat from 'react-number-format';
 import '../launches.css';
 import '../rockets.css';
 
@@ -26,11 +27,16 @@ class Rockets extends Component {
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-              <ListGroupItem>Cost per launch: ${rocket.cost_per_launch}</ListGroupItem>
+              <ListGroupItem>Cost per launch:
+                <NumberFormat value={rocket.cost_per_launch} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" $"}/>
+              </ListGroupItem>
               <ListGroupItem>Location: {rocket.country}</ListGroupItem>
               <ListGroupItem>Height: {rocket.height.feet}ft {rocket.height.meters}m</ListGroupItem>
               <ListGroupItem>Diameter: {rocket.diameter.meters}m {rocket.diameter.feet}ft</ListGroupItem>
-              <ListGroupItem>Mass: {rocket.mass.kg}kg {rocket.mass.lb}lb</ListGroupItem>
+              <ListGroupItem>Mass:
+                <NumberFormat value={rocket.mass.kg} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"kg"}/>
+                <NumberFormat value={rocket.mass.lb} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"lb"}/>
+              </ListGroupItem>
               <ListGroupItem>Engines: {rocket.engines.number}</ListGroupItem>
             </ListGroup>
             <div style={{ margin: 'auto' }}>
@@ -38,7 +44,10 @@ class Rockets extends Component {
                 <Tab eventKey="payload" title="Payload weights">
                   <ListGroup className="list-group-flush">
                     {rocket.payload_weights.map((payload) => (
-                      <ListGroupItem>Payload: {payload.name} ({payload.id}) - {payload.kg}kg {payload.lb}lb</ListGroupItem>
+                      <ListGroupItem>Payload: {payload.name} ({payload.id}) -
+                        <NumberFormat value={payload.kg} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"kg"}/>
+                        <NumberFormat value={payload.lb} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"lb"}/>
+                      </ListGroupItem>
                       )
                     )}
                   </ListGroup>
@@ -49,8 +58,14 @@ class Rockets extends Component {
                     <ListGroupItem>Engines: {rocket.first_stage.engines}</ListGroupItem>
                     <ListGroupItem>Burn time (seconds): {rocket.first_stage.burn_time_sec}</ListGroupItem>
                     <ListGroupItem>Fuel (tonnes): {rocket.first_stage.fuel_amount_tons}</ListGroupItem>
-                    <ListGroupItem>Thrust (sea level): {rocket.first_stage.thrust_sea_level.kN}kN {rocket.first_stage.thrust_sea_level.lbf}lbf</ListGroupItem>
-                    <ListGroupItem>Thrust (vacuum): {rocket.first_stage.thrust_vacuum.kN}kN {rocket.first_stage.thrust_vacuum.lbf}lbf</ListGroupItem>
+                    <ListGroupItem>Thrust (sea level):
+                      <NumberFormat value={rocket.first_stage.thrust_sea_level.kN} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"kN"}/>
+                      <NumberFormat value={rocket.first_stage.thrust_sea_level.lbf} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"lbf"}/>
+                    </ListGroupItem>
+                    <ListGroupItem>Thrust (vacuum):
+                      <NumberFormat value={rocket.first_stage.thrust_vacuum.kN} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"kN"}/>
+                      <NumberFormat value={rocket.first_stage.thrust_vacuum.lbf} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"lbf"}/>
+                    </ListGroupItem>
                   </ListGroup>
                 </Tab>
                 <Tab eventKey="second-launch-results" title="Second launch results">
@@ -58,7 +73,10 @@ class Rockets extends Component {
                     <ListGroupItem>Engines: {rocket.second_stage.engines}</ListGroupItem>
                     <ListGroupItem>Burn time (seconds): {rocket.second_stage.burn_time_sec}</ListGroupItem>
                     <ListGroupItem>Fuel (tonnes): {rocket.second_stage.fuel_amount_tons}</ListGroupItem>
-                    <ListGroupItem>Thrust: {rocket.second_stage.thrust.kN}kN {rocket.second_stage.thrust.lbf}lbf</ListGroupItem>
+                    <ListGroupItem>Thrust:
+                      <NumberFormat value={rocket.second_stage.thrust.kN} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"kN"}/>
+                      <NumberFormat value={rocket.second_stage.thrust.lbf} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={" "} suffix={"lbf"}/>
+                    </ListGroupItem>
                   </ListGroup>
                 </Tab>
               </Tabs>

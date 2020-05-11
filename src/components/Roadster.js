@@ -23,7 +23,7 @@ class Roadster extends Component {
       <div id="roadster">
         <Card className="bg-dark text-white">
           <Card.Img src={RoadsterImg} alt="Roadster in space" />
-          <Card.ImgOverlay style={{ textAlign: 'center' }}>
+          <Card.ImgOverlay style={{ textAlign: 'center', overflow: 'auto' }}>
             <Card.Title style={{ textAlign: 'center' }}>Where is {roadster.name}?</Card.Title>
             <Card.Text>{roadster.details}</Card.Text>
             <Card.Text>Distance statistics in kilometres:</Card.Text>
