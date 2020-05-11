@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/spacex-api/static/css/main.4d3c1b48.chunk.css",
-    "main.js": "/spacex-api/static/js/main.da341c80.chunk.js",
-    "main.js.map": "/spacex-api/static/js/main.da341c80.chunk.js.map",
+    "main.js": "/spacex-api/static/js/main.4aca1e24.chunk.js",
+    "main.js.map": "/spacex-api/static/js/main.4aca1e24.chunk.js.map",
     "runtime-main.js": "/spacex-api/static/js/runtime-main.6b16fda3.js",
     "runtime-main.js.map": "/spacex-api/static/js/runtime-main.6b16fda3.js.map",
     "static/css/2.74189dbb.chunk.css": "/spacex-api/static/css/2.74189dbb.chunk.css",
     "static/js/2.29ccf12b.chunk.js": "/spacex-api/static/js/2.29ccf12b.chunk.js",
     "static/js/2.29ccf12b.chunk.js.map": "/spacex-api/static/js/2.29ccf12b.chunk.js.map",
     "index.html": "/spacex-api/index.html",
-    "precache-manifest.fdf09bc2c9d62a918f122bc6ba8f9583.js": "/spacex-api/precache-manifest.fdf09bc2c9d62a918f122bc6ba8f9583.js",
+    "precache-manifest.4cb7f728238b785f29cea867d4e2f114.js": "/spacex-api/precache-manifest.4cb7f728238b785f29cea867d4e2f114.js",
     "service-worker.js": "/spacex-api/service-worker.js",
     "static/css/2.74189dbb.chunk.css.map": "/spacex-api/static/css/2.74189dbb.chunk.css.map",
     "static/css/main.4d3c1b48.chunk.css.map": "/spacex-api/static/css/main.4d3c1b48.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.74189dbb.chunk.css",
     "static/js/2.29ccf12b.chunk.js",
     "static/css/main.4d3c1b48.chunk.css",
-    "static/js/main.da341c80.chunk.js"
+    "static/js/main.4aca1e24.chunk.js"
   ]
 }
